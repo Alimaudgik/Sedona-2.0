@@ -1,0 +1,380 @@
+@dashed: 1px dashed red;
+@blue: #81b3d2;
+@darkblue: #669ec0;
+@grey: #eeeeee;
+
+
+.benefits__list {
+  display: flex;
+  flex-flow: column nowrap;
+  
+  background-color: @grey;
+}
+
+.benefits__item {
+  display: flex;
+  flex-flow: column nowrap;
+  color: #ffffff;
+}
+
+.ben-1,
+.ben-2 {
+  position: relative;
+}
+
+.benefits__item--about {
+  padding: 45px 30px 40px;
+
+  text-align: center;
+
+  background-color: @blue;
+}
+
+.benefits__item--title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+
+  text-transform: uppercase;
+}
+
+.benefits__item--number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  line-height: 14px;
+
+  &::before,
+  &::after {
+    content: '';
+
+    width: 9px;
+    height: 2px;
+
+    background-color: #ffffff;
+  }
+
+  &::before {
+    margin-right: 5px;
+  }
+
+  &::after {
+    margin-left: 5px;
+  }
+}
+
+.benefits__item--text {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.benefits__item--image {
+  position: relative;
+  height: 260px;
+
+  overflow: hidden;
+
+  & img {
+    position: absolute;
+    left: calc(50% - 260px);
+    top: 0;
+
+    width: 520px;
+    height: 260px;
+  }
+}
+
+.ben-1-2 {
+  padding: 25px 0 40px;
+
+  display: flex;
+  flex-flow: column nowrap;
+
+  background-color: #ffffff;
+}
+
+.ben-1-2--about {
+  position: relative;
+
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+
+  background-color: #ffffff;
+  color: #000000;
+
+  text-align: left;
+
+  &:last-child {
+    margin: 0;
+  }
+}
+
+.ben-1-2--title {
+  margin: 14px auto 20px 70px;
+  padding: 0;
+
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.ben-1-2--logo {
+  position: absolute;
+  top: 0;
+
+  height: auto;
+  & svg {
+    fill: @blue;
+  }
+}
+
+.house-logo {
+  left: 21px;
+
+  width: 39px;
+}
+
+.buter-logo {
+  left: 18px;
+
+  width: 40px;
+}
+
+.present-logo {
+  left: 25px;
+
+  width: 32px;
+}
+
+.ben-1-2--text {
+  margin: 0;
+  padding: 0;
+
+  margin-left: 70px;
+
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.ben-3-5 {
+  margin: 0;
+  padding: 30px 20px 0;
+
+  color: #000000;
+
+  &:last-child .benefits__item--about {
+    border: none;
+  }
+
+  & .benefits__item--about {
+    padding: 0;
+
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #d6d6d6;
+    
+    background-color: @grey;
+  }
+
+  & .benefits__item--number {
+    color: #333333;
+
+    &::before,
+    &::after {
+      background-color: #333333;
+    }
+  }
+
+  & .benefits__item--text {
+    margin-bottom: 30px;
+
+    color: #333333;
+  }
+}
+
+
+
+@media(min-width: 768px) {
+  .benefits__list {
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .benefits__item {
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    width: 100%;
+  }
+
+  .ben-2 {
+    flex-direction: row-reverse;
+  }
+
+  .benefits__item--about {
+    margin: 0;
+    padding: 0;
+    width: 256px;
+    height: 256px;
+  }
+
+  .benefits__item--title {
+    margin: 45px auto 15px;
+    width: 155px;
+    text-align: center;
+
+    font-size: 21px;
+    line-height: 21px;
+  }
+
+  .benefits__item--number {
+    margin-bottom: 25px;
+  }
+
+  .benefits__item--text {
+    margin: 0 auto;
+    width: 170px;
+
+    line-height: 21px;
+  }
+
+  .benefits__item--image {
+    flex-grow: 1;
+    height: 256px;
+
+    & img {
+      position: absolute;
+      left: auto;
+      right: 0;
+      top: 0;
+
+      width: 512px;
+      height: 100%;
+    }
+  }
+
+  .ben-1-2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .ben-1-2--about {
+    display: flex;
+    flex-flow: column nowrap;
+
+    margin: 0;
+    padding: 0;
+
+    height: 330px;
+
+    text-align: center;
+  }
+
+  .ben-1-2--title {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 21px;
+    line-height: 21px;
+
+    order: 2;
+  }
+
+  .ben-1-2--logo {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    margin: 60px auto 30px;
+    height: 75px;
+
+    order: 1;
+
+    & svg {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+  }
+
+  .house-logo {
+    width: 75px;
+  }
+
+  .buter-logo {
+    width: 77px;
+  }
+
+  .present-logo {
+    width: 64px;
+  }
+
+  .ben-1-2--text {
+    margin: 0 auto;
+    width: 175px;
+
+    order: 3;
+  }
+
+  .ben-3-5 {
+    margin: 0;
+    padding: 0;
+    width: 256px;
+
+    & .benefits__item--about {
+      border: none;
+    }
+
+    & .benefits__item--text {
+      margin: 0 auto;
+    }
+  }
+}
+
+
+
+@media(min-width: 1200px) {
+  .benefits__item--about {
+    width: 400px;
+  }
+
+  .ben-1 .benefits__item--number,
+  .ben-2 .benefits__item--number {
+    &::before,
+    &::after {
+      width: 15px;
+      height: 1px;
+    }
+  }
+
+  .benefits__item--text {
+    width: 270px;
+  }
+
+  .benefits__item--image img {
+    top: calc(50% - 200px);
+
+    width: 800px;
+    height: 400px;
+  }
+
+  .ben-1-2--text {
+    width: 270px;
+  }
+
+  .ben-3-5 {
+    width: 400px;
+
+    & .benefits__item--text {
+      width: 300px;
+    }
+  }
+}

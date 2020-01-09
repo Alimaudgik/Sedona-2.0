@@ -1,0 +1,113 @@
+@dashed: 1px dashed red;
+@blue: #81b3d2;
+@darkblue: #669ec0;
+@hardblue: #5496bd;
+
+
+body {
+  font-family: 'PT Sans';
+  margin: 0 auto;
+  width: 320px;
+
+  background-color: #f2f2f2;
+
+  outline: 2px solid pink;
+
+}
+
+div,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+
+ul {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  cursor: pointer;
+}
+
+img {
+  width: 100%;
+}
+
+.button {
+  height: 58px;
+
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+  background-color: @blue;
+
+  outline: none;
+
+  &:hover {
+    background-color: @darkblue;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+
+    background-color: @hardblue;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+
+.page-title,
+.page-title--text {
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.page-title {
+  font-size: 18px;
+}
+
+.page-title--text {
+  font-size: 14px;
+}
+
+
+
+@media(min-width: 768px) {
+  body {
+    min-width: 768px;
+    
+    outline-color: yellow;
+  }
+
+  .page-title {
+    font-size: 30px;
+  }
+  
+}
+
+
+
+@media(min-width: 1200px) {
+  body {
+    min-width: 1200px;
+    margin: 0 auto;
+
+    outline-color: black;
+  }
+}
+

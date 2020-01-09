@@ -1,0 +1,156 @@
+@dashed: 1px dashed red;
+@blue: #81b3d2;
+@darkblue: #669ec0;
+@hardblue: #5496bd;
+
+
+.page-footer__wrapper {
+  position: relative;
+  display: flex;
+  flex-flow: column nowrap;
+
+  padding: 40px 0 20px;
+
+  background-color: #ffffff;
+}
+
+.visit__link {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__list {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+  margin: 0 auto 40px;
+  width: 150px;
+}
+
+.social__item {
+  width: 46px;
+  height: 48px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: @blue;
+
+  & svg {
+    fill: #ffffff;
+  }
+
+  &:hover {
+    background-color: @darkblue;
+  }
+
+  &:active {
+    background-color: @hardblue;
+
+    & svg {
+      fill: rgba(255, 255, 255, 0.3);
+    }
+  }
+}
+
+.twitter svg {
+  width: 18px;
+}
+
+.facebook svg {
+  width: 9px;
+}
+
+.youtube svg {
+  width: 20px;
+}
+
+.html-academy {
+  display: flex;
+  align-items: center;
+
+  margin: 0 auto;
+}
+
+.html-academy__link {
+  display: flex;
+  align-items: center;
+
+  height: 34px;
+
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &:hover,
+  &:hover svg {
+    color: @blue;
+    fill: @blue;
+  }
+
+  &:active,
+  &:active svg {
+    color: rgba(0, 0, 0, 0.3);
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+.html-academy__text {
+  margin-right: 12px;
+}
+
+
+@media(min-width: 768px) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+
+    padding: 35px 60px;
+  }
+
+  .visit__link {
+    margin: 0;
+
+    line-height: 48px;
+  }
+
+  .social__list {
+    position: absolute;
+    top: 35px;
+    left: calc(50% - 75px);
+
+    margin: 0;
+  }
+
+  .html-academy {
+    margin: 0;
+    height: 48px;
+  }
+}
+
+
+
+@media(min-width: 1200px) {
+  .page-footer__wrapper {
+    padding: 35px 120px;
+  }
+}

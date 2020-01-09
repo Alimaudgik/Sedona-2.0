@@ -1,0 +1,49 @@
+@dashed: 1px dashed red;
+@blue: #81b3d2;
+@darkblue: #669ec0;
+@hardblue: #5496bd;
+
+
+.page-inside .present-title {
+  border-bottom: 1px solid #e5e5e5;
+
+  &::after {
+    display: none;
+  }
+}
+
+.page-inside .present-title__wrapper {
+  padding: 45px 20px 35px;
+}
+
+.page-inside .present-title__title,
+.page-inside .present-title__text {
+  width: auto;
+  
+  & br {
+    display: none;
+  }
+}
+
+
+
+
+@media(min-width: 768px) {
+  .page-inside .present-title {
+    border: none;
+  }
+  
+  .page-inside .present-title__wrapper {
+    padding: 75px 60px;
+  }
+
+  .page-inside .present-title__text br {
+    display: inline-block;
+  }
+}
+
+
+
+@media(min-width: 1200px) {
+
+}

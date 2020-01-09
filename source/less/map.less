@@ -1,0 +1,36 @@
+@dashed: 1px dashed red;
+@blue: #81b3d2;
+@darkblue: #669ec0;
+@hardblue: #5496bd;
+
+
+.map__wrapper {
+  width: 100%;
+  height: 350px;
+
+  background-image: url(../img/map-mobile.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+@media(min-width: 768px) {
+  .map__wrapper {
+    background-image: url(../img/map-tablet.jpg);  
+  }
+}
+
+
+
+@media(min-width: 1200px) {
+  .map__wrapper {
+    background-image: url(../img/map-desktop.jpg);
+  }
+}
