@@ -89,7 +89,7 @@
                 <label class="label-text" for="surname">Фамилия*: </label><input id="surname" type="text" placeholder="Иванов">
               </li>
               <li class="name__item">
-                <label class="label-text"  for="midname">Отчество: </labelclass="label-text><input id="midname" type="text" placeholder="Александрович">
+                <label class="label-text" for="midname">Отчество: </label><input id="midname" type="text" placeholder="Александрович">
               </li>
             </ul>
           </div>
@@ -98,8 +98,9 @@
             <h3 class="form__item--title contacts__title">Контактная информация</h3>
             <ul class="contacts__list">
               <li class="contacts__item">
-                <label class="label-text" for="phone">Телефон*: <input id="phone" type="text" placeholder="Введите телефон">
-                <span class="contacts__logo phone-logo">
+                <label class="label-text" for="phone">Телефон*:</label>
+                <input id="phone" type="text" placeholder="Введите телефон">
+                <p class="contacts__logo phone-logo">
                   <svg style="width: 18px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
                   <style type="text/css">
@@ -115,20 +116,19 @@
                     </g>
                   </g>
                   </svg>
-                </span class="contacts__logo phone-logo">
-                </label>
+                </p>
               </li>
 
               <li class="contacts__item">
-                <label class="label-text" for="email">Электронная почта*: <input id="email" type="text" placeholder="Введите e-mail">
-                <span class="contacts__logo email-logo">
+                <label class="label-text" for="email">Электронная почта*: </label>
+                <input id="email" type="text" placeholder="Введите e-mail">
+                <p class="contacts__logo email-logo">
                   <svg style="width: 16px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 2 16 12" style="enable-background:new 0 2 16 12;" xml:space="preserve">
                   <path d="M8,10c-0.27,0-0.5-0.09-1-0.34L0,6v7c0,0.55,0.45,1,1,1h14c0.55,0,1-0.45,1-1V6L9,9.66C8.5,9.91,8.27,10,8,10z M15,2H1
                     C0.45,2,0,2.45,0,3v0.76l8,4.21l8-4.21V3C16,2.45,15.55,2,15,2z"/>
                   </svg>
-                </span>
-                </label>
+                </p>
               </li>
             </ul>
           </div>
@@ -154,12 +154,12 @@
           
           <div class="form__item emotions">
             <h3 class="form__item--title emotions__title">Опишите свои эмоции</h3>
-            <textarea name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги "></textarea>
+            <textarea class="emotions__textarea" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги "></textarea>
           </div>
 
-          <div class="form__item">
-            <button class="form__bytton button" type="submit">Отправить отзыв</button>
-            <p>* &ndash; Обязательные поля</p>
+          <div class="form__item form__itemm--button">
+            <button class="form__button button" type="submit">Отправить отзыв</button>
+            <p class="form__button--text">* &ndash; Обязательные поля</p>
 
           </div>
         </form>

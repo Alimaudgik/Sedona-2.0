@@ -19,10 +19,15 @@
   padding: 25px 20px;
 
   border-bottom: @grey-border;
+
+  &:last-child {
+    border: none;
+  }
 }
 
 .form__item--title {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 18px;
   line-height: 18px;
@@ -32,6 +37,10 @@
 }
 
 input[type=text] {
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 58px;
+  
   border: none;
   background-color: @input-back;
   outline: none;
@@ -50,9 +59,11 @@ input[type=text] {
     background-color: transparent;
     border: 4px solid #e5e5e5;
     box-sizing: border-box;
+    line-height: 50px;
+    padding-left: 16px;
   }
 }
-
+  
 .label-text {
   font-size: 14px;
   text-transform: uppercase;
@@ -68,12 +79,15 @@ input[type=text] {
 @media(min-width: 768px) {
   .form__list {
     flex-flow: row wrap;
+    justify-content: space-between;
 
     padding: 0 60px;
   }
 
   .form__item {
     padding: 0;
+
+    border: @dashed;
   }
 
   .form__item--title {
