@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="css/style.min.css" type="text/css">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
     <title>Седона</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    
+    <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/PTSans-Italic.woff2" as="font">
+    <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/PTSans-BoldItalic.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -21,7 +28,7 @@
             <a class="main-nav__link current" method="GET" href="review.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" method="GET" href="htmlacademy.html">HTML Academy</a>
+            <a class="main-nav__link" method="GET" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
         
@@ -44,8 +51,8 @@
         <div class="represent__wrapper">
           <p class="represent__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-desktop.jpg">
-              <img src="img/bg-mobile.jpg" alt="Горный пейзаж">
+              <source media="(min-width: 1200px)" srcset="img/bg-desktop.webp">
+              <img src="img/bg-mobile.webp" alt="Горный пейзаж">
             </picture>
           </p>
           <p class="represent__text">
@@ -86,13 +93,13 @@
             <h3 class="form__item--title name__title">Представьтесь</h3>
             <ul class="name__list">
               <li class="name__item">
-                <label class="label-text" for="username">Имя*: </label><input id="username" type="text" placeholder="Петр">
+                <label class="label-text" for="username">Имя*: </label><input id="username" type="text" placeholder="Петр" pattern="[A-Za-zA-ЯаяЁё]{3}" autocomplete="on" required>
               </li>
               <li class="name__item">
-                <label class="label-text" for="surname">Фамилия*: </label><input id="surname" type="text" placeholder="Иванов">
+                <label class="label-text" for="surname">Фамилия*: </label><input id="surname" type="text" placeholder="Иванов" pattern="[A-Za-zA-ЯаяЁё]{3}" autocomplete="on" required>
               </li>
               <li class="name__item">
-                <label class="label-text" for="midname">Отчество: </label><input id="midname" type="text" placeholder="Александрович">
+                <label class="label-text" for="midname">Отчество: </label><input id="midname" type="text" placeholder="Александрович" pattern="[A-Za-zA-ЯаяЁё]{3}" autocomplete="on">
               </li>
             </ul>
           </div>
@@ -102,9 +109,9 @@
             <ul class="contacts__list">
               <li class="contacts__item">
                 <label class="label-text" for="phone">Телефон*:</label>
-                <input id="phone" type="text" placeholder="Введите телефон">
+                <input id="phone" type="text" placeholder="Введите телефон" pattern="[A-Za-zA-ЯаяЁё]{3}" autocomplete="on" required>
                 <p class="contacts__logo phone-logo">
-                  <svg style="width: 18px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg style="width: 18px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                     viewBox="0 0 18 18" style="enable-background:new 0 0 18 18;" xml:space="preserve">
                   <style type="text/css">
                     .st0{fill:#010101;}
@@ -124,7 +131,7 @@
 
               <li class="contacts__item">
                 <label class="label-text" for="email">Электронная почта*: </label>
-                <input id="email" type="text" placeholder="Введите e-mail">
+                <input id="email" type="text" placeholder="Введите e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autocomplete="on" required>
                 <p class="contacts__logo email-logo">
                   <svg style="width: 16px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 2 16 12" style="enable-background:new 0 2 16 12;" xml:space="preserve">

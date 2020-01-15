@@ -1,9 +1,18 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link rel="stylesheet" href="css/style.min.css" type="text/css">
-    <meta charset="UTF-8">
     <title>Седона</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale-1">
+    <meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    
+    <link rel="preload" href="fonts/PTSans-Regular.woff2" as="font">
+    <link rel="preload" href="fonts/PTSans-Italic.woff2" as="font">
+    <link rel="preload" href="fonts/PTSans-Bold.woff2" as="font">
+    <link rel="preload" href="fonts/PTSans-BoldItalic.woff2" as="font">
+    <link rel="stylesheet" href="css/style.min.css" type="text/css">
   </head>
   <body>
     <header class="page-header">
@@ -19,7 +28,7 @@
             <a class="main-nav__link" href="review.html">Форма отзыва</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="htmlacademy.html">HTML Academy</a>
+            <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
           </li>
         </ul>
         
@@ -42,8 +51,8 @@
         <div class="represent__wrapper">
           <p class="represent__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/bg-desktop.jpg">
-              <img src="img/bg-mobile.jpg" alt="Горный пейзаж">
+              <source media="(min-width: 1200px)" srcset="img/bg-desktop.webp">
+              <img src="img/bg-mobile.webp" alt="Горный пейзаж">
             </picture>
           </p>
           <p class="represent__text">
@@ -69,8 +78,8 @@
             <li class="pictures__item">
               <p class="pictures__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.webp">
+                  <source media="(min-width: 768px)" srcset="img/photo-1-tablet.webp">
                   <img src="img/photo-1-mobile.jpg" alt="Фото 1">
                 </picture>
               </p>
@@ -80,7 +89,7 @@
                   <p class="pictures__text--who">Автор фото: Борис</p>
                 </div>
                 <p class="pictures__text--likes">
-                  <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 22 20" style="enable-background:new 0 0 22 20;" xml:space="preserve">
                   <g id="Page-1">
                   <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -100,8 +109,8 @@
             <li class="pictures__item">
               <p class="pictures__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg">
+                  <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.webp">
+                  <source media="(min-width: 768px)" srcset="img/photo-2-tablet.webp">
                   <img src="img/photo-2-mobile.jpg" alt="Фото 2">
                 </picture>
               </p>
@@ -111,7 +120,7 @@
                   <p class="pictures__text--who">Автор фото: Борис</p>
                 </div>
                 <p class="pictures__text--likes">
-                  <svg style="width: 23px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg style="width: 23px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 22 20" style="enable-background:new 0 0 22 20;" xml:space="preserve">
                   <g id="Page-1">
                   <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -142,7 +151,7 @@
                   <p class="pictures__text--who">Автор фото: Борис</p>
                 </div>
                 <p class="pictures__text--likes">
-                  <svg style="width: 23px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg style="width: 23px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 22 20" style="enable-background:new 0 0 22 20;" xml:space="preserve">
                   <g id="Page-1">
                   <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -162,9 +171,9 @@
             <li class="pictures__item">
               <p class="pictures__image">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
-                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg">
-                  <img src="img/photo-4-mobile.jpg" alt="Фото 4">
+                  <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.webp">
+                  <source media="(min-width: 768px)" srcset="img/photo-4-tablet.webp">
+                  <img src="img/photo-4-mobile.webp" alt="Фото 4">
                 </picture>
               </p>
               <div class="pictures__text--wrapper">
@@ -173,7 +182,7 @@
                   <p class="pictures__text--who">Автор фото: Борис</p>
                 </div>
                 <p class="pictures__text--likes">
-                  <svg style="width: 23px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                  <svg style="width: 23px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                   viewBox="0 0 22 20" style="enable-background:new 0 0 22 20;" xml:space="preserve">
                   <g id="Page-1">
                   <g id="Core" transform="translate(-295.000000, -464.000000)">
@@ -205,14 +214,14 @@
         <div class="video__wrapper">
           <p class="video__image">
             <picture>
-              <source media="(min-width: 1200px)" srcset="img/video-desktop.jpg">
-              <source media="(min-width: 768px)" srcset="img/video-tablet.jpg">
-              <img src="img/video-mobile.jpg" alt="видео">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop.webp">
+              <source media="(min-width: 768px)" srcset="img/video-tablet.webp">
+              <img src="img/video-mobile.webp" alt="видео">
             </picture>
           </p>
           <div class="video__menu">
             <p class="video__menu--play">
-              <svg style="width: 16px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg style="width: 16px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 16 20" style="enable-background:new 0 0 16 20;" xml:space="preserve">
               <path class="st0" d="M8,4V0L3,5l5,5V6c3.31,0,6,2.69,6,6c0,3.31-2.69,6-6,6c-3.32,0-6-2.69-6-6H0c0,4.42,3.58,8,8,8
                 c4.42,0,8-3.58,8-8C16,7.58,12.42,4,8,4z"/>
@@ -220,7 +229,7 @@
             </p>
             <p class="video__menu--line"></p>
             <p class="video__menu--sub">
-              <svg style="width: 32px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg style="width: 32px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 32 20" style="enable-background:new 0 0 32 20;" xml:space="preserve">
               <path class="st0" d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.4,15.85
                 c-0.54,0.11-1.1,0.16-1.68,0.16c-0.69,0-1.35-0.11-1.98-0.32c-0.62-0.21-1.17-0.56-1.65-1.04s-0.85-1.1-1.13-1.87
@@ -238,7 +247,7 @@
               </svg>
             </p>
             <p class="video__menu--wind">
-              <svg style="width: 20px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg style="width: 20px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 20 20.19" style="enable-background:new 0 0 20 20.19;" xml:space="preserve">
            <g>
              <polygon class="st0" points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0 	"/>
@@ -256,12 +265,12 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <a href="https://www.google.by/search?client=opera&q=%23visitsedona&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank" class="visit__link">#visitSEDONA</a>
+        <a href="https://www.google.by/search?client=opera&q=%23visitsedona&sourceid=opera&ie=UTF-8&oe=UTF-8" target="_blank" class="visit__link" title="#visitsedona">#visitSEDONA</a>
 
         <ul class="social__list">
           <li class="social__item">
             <a href="https://twitter.com" target="_blank" class="social__link twitter">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 17.5 14.66" style="enable-background:new 0 0 17.5 14.66;" xml:space="preserve">
               <g id="W6EeEF_1_">
               <g>
@@ -277,7 +286,7 @@
           </li>
           <li class="social__item">
             <a href="https://facebook.com" target="_blank" class="social__link facebook">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 8.67 18.94" style="enable-background:new 0 0 8.67 18.94;" xml:space="preserve">
               <path d="M6.28,3.36c0.8,0,1.6,0,2.4,0c0-1.12,0-2.24,0-3.36C7.71,0,6.75,0,5.79,0C2.66,0.18,1.54,2.39,1.95,6.11H0v3.52h1.96
                 c0,3.1,0,6.21,0,9.31c1.28,0,2.56,0,3.84,0c0-3.1,0-6.21,0-9.31h2.86V6.11H5.79C5.77,5.07,5.75,3.71,6.28,3.36z"/>
@@ -286,7 +295,7 @@
           </li>
           <li class="social__item">
             <a href="https://youtube.com"  target="_blank" class="social__link youtube">
-              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
               viewBox="0 0 19.98 14.02" style="enable-background:new 0 0 19.98 14.02;" xml:space="preserve">
             <path d="M17.14,0H2.84C1.27,0,0,1.28,0,2.83v8.35c0,1.56,1.27,2.83,2.84,2.83h14.31c1.56,0,2.83-1.28,2.83-2.83V2.83
               C19.98,1.28,18.7,0,17.14,0z M7.04,10.39V3.62l6.77,3.38L7.04,10.39z"/>
@@ -298,7 +307,7 @@
         <div class="html-academy">
           <a href="" class="html-academy__link" target="_blank">
             <span class="html-academy__text">разработано</span>
-            <svg style="width: 27px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg style="width: 27px;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 153.38 194.24" style="enable-background:new 0 0 153.38 194.24;" xml:space="preserve">
             <path class="st0" d="M77.5,0.08L76.69,0L0,8.04v140.57l76.69,45.63l76.69-45.63V8.04L77.5,0.08z M143.35,142.9l-66.66,39.66
               L10.03,142.9V85.29l66.37,39.51l0.11,7.16l-45.53-27.1l-0.07,6.95l45.71,27.47l0.11,7.35l-45.7-27.19l-0.07,6.95l45.71,27.47
